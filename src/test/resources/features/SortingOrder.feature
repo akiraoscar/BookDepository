@@ -1,5 +1,5 @@
 @sortingOrder
-Feature: Authentication
+Feature: Sorting Order
 
   Narrative:
   As a user
