@@ -14,11 +14,11 @@ public class AuthenticationSteps extends ScenarioSteps {
         authencticationPages.signIn(email, password);
     }
 
-    public void clickButtonSignInSubmit(){
-        authencticationPages.clickButtonSignInSubmit();
-    }
-
     public void validationAlert(String button) {
         authencticationPages.validationAlert(button);
+    }
+
+    public void validateSignIn(){
+        authencticationPages.validateSignIn();
     }
 }

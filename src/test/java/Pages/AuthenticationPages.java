@@ -22,9 +22,6 @@ public class AuthenticationPages extends PageObject {
         getDriver().switchTo().frame(iframeSignIn);
         textBoxEmail.sendKeys(email);
         textBoxPassword.sendKeys(password);
-    }
-
-    public void clickButtonSignInSubmit(){
         buttonSignInSubmit.click();
     }
 
@@ -35,5 +32,12 @@ public class AuthenticationPages extends PageObject {
     public void validationAlert(String button) {
         alertContainer.isDisplayed();
         Assert.assertEquals("There was a problem",textAlert.getText());
+    }
+
+    @FindBy(css = ".user-nav .desktop-only")
+    WebElement helloUser;
+    public void validateSignIn(){
+        helloUser.isDisplayed();
+        Assert.assertEquals("Hello Tahu",helloUser.getText());
     }
 }

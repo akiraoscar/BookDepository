@@ -20,9 +20,19 @@ public class Authentication {
 
     @Then("notification problem is displayed")
     public void notification_problem_is_displayed() {
-        authenticationSteps.clickButtonSignInSubmit();
         authenticationSteps.validationAlert("");
     }
+
+    @When("input with right authentication")
+    public void input_with_right_authentication() {
+        authenticationSteps.signIn("tahuular@gmail.com","tahuular12");
+    }
+
+    @Then("sign in to the page")
+    public void sign_in_to_the_page() {
+        authenticationSteps.validateSignIn();
+    }
+
 
 }
 
