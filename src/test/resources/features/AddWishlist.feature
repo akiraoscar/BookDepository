@@ -14,3 +14,6 @@ Feature: Add Wishlist
     Given User is already on detail book page
     When add to wishlist
     Then item is added to wishlist
+
+  Scenario: delete wishlist
+    When delete wishlist

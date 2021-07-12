@@ -14,7 +14,11 @@ public class AddWishlistSteps {
         addWishlistPages.addWishlist();
     }
 
-    public void validationWishlist(String wl){
-        addWishlistPages.validationWishlist(wl);
+    public void validationWishlist(){
+        addWishlistPages.validationWishlist();
+    }
+
+    public void deleteWishlist(){
+        addWishlistPages.deleteWishlist();
     }
 }

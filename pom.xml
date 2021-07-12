@@ -90,7 +90,7 @@
                     </includes>
                     <argLine>-Xmx512m</argLine>
                     <parallel>classes</parallel>
-                    <threadCount>3</threadCount>
+                    <threadCount>4</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
                     <!--                    <rerunFailingTestsCount>2</rerunFailingTestsCount>-->
                 </configuration>

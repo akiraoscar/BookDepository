@@ -23,7 +23,17 @@ public class AddWishlistPages extends PageObject {
 
     @FindBy(css = ".modal-body")
     WebElement nameWishlist;
-    public void validationWishlist(String wl){
+    public void validationWishlist(){
         Assert.assertEquals("Item added to "+"My Wishlist",nameWishlist.getText().substring(0,25));
+    }
+
+    @FindBy(linkText = "Wishlist")
+    WebElement btnWishlist;
+    @FindBy(linkText = "Delete")
+    WebElement btnDel;
+    public void deleteWishlist(){
+        btnWishlist.click();
+        btnDel.click();
+        getAlert().accept();
     }
 }

@@ -16,4 +16,5 @@ public class AddBasketSteps {
     public void validationAmount(String amount){
         addBasketPages.validationAmount(amount);
     }
+
 }

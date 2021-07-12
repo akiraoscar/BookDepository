@@ -20,9 +20,14 @@ public class AddWishlist {
         addWishlistSteps.addWishlist();
     }
 
-    @Then("item is added to ([^\"]*)")
-    public void item_is_added_to_wishlist(String wl) {
-        addWishlistSteps.validationWishlist(wl);
+    @Then("item is added to wishlist")
+    public void item_is_added_to_wishlist() {
+        addWishlistSteps.validationWishlist();
+    }
+
+    @When("delete wishlist")
+    public void delete_wishlist() {
+        addWishlistSteps.deleteWishlist();
     }
 
 }
