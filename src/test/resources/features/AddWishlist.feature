@@ -3,8 +3,8 @@ Feature: Add Wishlist
 
   Narrative:
   As a user
-  I want to adjust amount in basket
-  So that The amount is adjusted
+  I want to add to wishlist
+  So that User can buy when they ready
 
   Background: authentication success
     Given User is on the home page

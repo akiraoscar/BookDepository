@@ -22,20 +22,4 @@ public class AddBasket {
     public void amount_is_adjusted(String amount) {
         addBasketSteps.validationAmount(amount);
     }
-
-    @Given("User is already on detail book page")
-    public void user_is_already_on_detail_book_page() {
-
-    }
-
-    @When("add to wishlist")
-    public void add_to_wishlist() {
-        addBasketSteps.addWishlist();
-    }
-
-    @Then("item is added to ([^\"]*)")
-    public void item_is_added_to_wishlist(String wl) {
-        addBasketSteps.validationWishlist(wl);
-    }
-
 }

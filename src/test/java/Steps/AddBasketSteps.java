@@ -16,12 +16,4 @@ public class AddBasketSteps {
     public void validationAmount(String amount){
         addBasketPages.validationAmount(amount);
     }
-
-    public void addWishlist(){
-        addBasketPages.addWishlist();
-    }
-
-    public void validationWishlist(String wl){
-        addBasketPages.validationWishlist(wl);
-    }
 }

@@ -15,31 +15,9 @@ public class AddBasketPages extends PageObject {
     @FindBy(css = "[name='quantity']")
     WebElement selectQuantity;
     public void addBasket(){
-        buttonDetail.click();
         buttonAddBasket.click();
         buttonBasketCheckout.click();
     }
-
-    @FindBy(linkText = "Add to wishlist")
-    WebElement buttonAddWishlist;
-    @FindBy(css = ".btn-add")
-    WebElement buttonAdd;
-    public void addWishlist(){
-        buttonDetail.click();
-        buttonAddWishlist.click();
-        buttonAdd.click();
-    }
-
-    @FindBy(css = ".modal-body")
-    WebElement nameWishlist;
-    @FindBy(xpath = "//strong[.='Book was added to your wishlist']")
-    WebElement messageSuccess;
-    @FindBy(xpath = "//div[.='Selected book was added to your wishlist.']")
-    WebElement messageSuccess2;
-    public void validationWishlist(String wl){
-        Assert.assertEquals("Item added to "+"My Wishlist",nameWishlist.getText().substring(0,25));
-    }
-
 
     public void adjustAmount(String amount){
         element(selectQuantity).selectByVisibleText(amount);
